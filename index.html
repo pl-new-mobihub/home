@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-17053004257"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-17053004257');
+</script>
+<!-- Event snippet for pixel conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+<script>
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+  gtag('event', 'conversion', {
+      'send_to': 'AW-17053004257/3B-SCOvd8sYaEOHjwMM_',
+      'event_callback': callback
+  });
+  return false;
+}
+</script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>nowy polski mobihub</title>
+  <link rel="stylesheet" href="styles.css">
+
+ 
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+
+      function getCid(name) {
+        const value = `; ${document.cookie}`;
+        const parts = value.split(`; ${name}=`);
+        if (parts.length === 2) {
+          const fullCookieValue = parts.pop().split(';').shift();
+          const cidValue = fullCookieValue.split('.')[2] + '.' + fullCookieValue.split('.')[3];
+          return cidValue;
+        }
+        return null;
+      }
+
+      const cid = getCid('_ga');
+
+      // Получаем все кнопки с атрибутом onclick
+      var buttons = document.querySelectorAll('[onclick^="return gtag_report_conversion"]');
+
+      // Перебираем каждую кнопку
+      buttons.forEach(function (button) {
+        // Получаем текущее значение атрибута onclick
+        var currentOnClick = button.getAttribute('onclick');
+
+        // Извлекаем параметры из текущей ссылки
+        var urlParams = new URLSearchParams(window.location.search);
+        var keywordParam = urlParams.get('utm_term');
+        var gclidParam = urlParams.get('gclid');
+
+        // Формируем новую ссылку с параметрами
+        var newOnClick = "return gtag_report_conversion('https://layers-embers.click/S2VSFZvn?" + "utm_term=" + keywordParam + "&gclid=" + gclidParam + "&cid=" + cid + "')";
+
+        // Заменяем текущее значение атрибута onclick новым
+        button.setAttribute('onclick', newOnClick);
+      });
+    });
+  </script>
+  
+</head>
+<body>
+  <header class="header">
+    <div class="logo">
+      <span class="logo-icon euro-symbol">€</span>
+      nowy polski mobihub
+    </div>
+  </header>
+  
+  <div class="cashout-cards-section">
+    <div class="cashout-cards-container">
+      <div class="cashout-cards-track">
+        <!-- Pierwszy zestaw kart -->
+        <div class="cashout-card">
+          <div class="cashout-logo">
+            <img src="images/icon_vi.png" alt="Visa Logo">
+          </div>
+          <div class="cashout-details">
+            <div class="cashout-info">
+              <div class="cashout-bank">Visa</div>
+              <div class="cashout-label">cashout</div>
+            </div>
+            <div class="cashout-amount"><span class="euro-symbol">€</span>175</div>
+          </div>
+        </div>
+        
+        <div class="cashout-card">
+          <div class="cashout-logo">
+            <img src="images/icon_bt.png" alt="Bitcoin Logo">
+          </div>
+          <div class="cashout-details">
+            <div class="cashout-info">
+              <div class="cashout-bank">Bitcoin</div>
+              <div class="cashout-label">cashout</div>
+            </div>
+            <div class="cashout-amount"><span class="euro-symbol">€</span>120</div>
+          </div>
+        </div>
+        
+        <div class="cashout-card">
+          <div class="cashout-logo">
+            <img src="images/icon_et.png" alt="Ethereum Logo">
+          </div>
+          <div class="cashout-details">
+            <div class="cashout-info">
+              <div class="cashout-bank">Ethereum</div>
+              <div class="cashout-label">cashout</div>
+            </div>
+            <div class="cashout-amount"><span class="euro-symbol">€</span>95</div>
+          </div>
+        </div>
+        
+        <div class="cashout-card">
+          <div class="cashout-logo">
+            <img src="images/mc.png" alt="Mastercard Logo">
+          </div>
+          <div class="cashout-details">
+            <div class="cashout-info">
+              <div class="cashout-bank">Mastercard</div>
+              <div class="cashout-label">cashout</div>
+            </div>
+            <div class="cashout-amount"><span class="euro-symbol">€</span>190</div>
+          </div>
+        </div>
+        
+        <div class="cashout-card">
+          <div class="cashout-logo">
+            <img src="images/rev.png" alt="Revolut Logo">
+          </div>
+          <div class="cashout-details">
+            <div class="cashout-info">
+              <div class="cashout-bank">Revolut</div>
+              <div class="cashout-label">cashout</div>
+            </div>
+            <div class="cashout-amount"><span class="euro-symbol">€</span>150</div>
+          </div>
+        </div>
+        
+        <div class="cashout-card">
+          <div class="cashout-logo">
+            <img src="images/pp.png" alt="PayPal Logo">
+          </div>
+          <div class="cashout-details">
+            <div class="cashout-info">
+              <div class="cashout-bank">PayPal</div>
+              <div class="cashout-label">cashout</div>
+            </div>
+            <div class="cashout-amount"><span class="euro-symbol">€</span>85</div>
+          </div>
+        </div>
+        
+        <!-- Drugi zestaw kart (duplikat dla nieskończonego przewijania) -->
+        <div class="cashout-card">
+          <div class="cashout-logo">
+            <img src="images/icon_vi.png" alt="Visa Logo">
+          </div>
+          <div class="cashout-details">
+            <div class="cashout-info">
+              <div class="cashout-bank">Visa</div>
+              <div class="cashout-label">cashout</div>
+            </div>
+            <div class="cashout-amount"><span class="euro-symbol">€</span>175</div>
+          </div>
+        </div>
+        
+        <div class="cashout-card">
+          <div class="cashout-logo">
+            <img src="images/icon_bt.png" alt="Bitcoin Logo">
+          </div>
+          <div class="cashout-details">
+            <div class="cashout-info">
+              <div class="cashout-bank">Bitcoin</div>
+              <div class="cashout-label">cashout</div>
+            </div>
+            <div class="cashout-amount"><span class="euro-symbol">€</span>120</div>
+          </div>
+        </div>
+        
+        <div class="cashout-card">
+          <div class="cashout-logo">
+            <img src="images/icon_et.png" alt="Ethereum Logo">
+          </div>
+          <div class="cashout-details">
+            <div class="cashout-info">
+              <div class="cashout-bank">Ethereum</div>
+              <div class="cashout-label">cashout</div>
+            </div>
+            <div class="cashout-amount"><span class="euro-symbol">€</span>95</div>
+          </div>
+        </div>
+        
+        <div class="cashout-card">
+          <div class="cashout-logo">
+            <img src="images/mc.png" alt="Mastercard Logo">
+          </div>
+          <div class="cashout-details">
+            <div class="cashout-info">
+              <div class="cashout-bank">Mastercard</div>
+              <div class="cashout-label">cashout</div>
+            </div>
+            <div class="cashout-amount"><span class="euro-symbol">€</span>190</div>
+          </div>
+        </div>
+        
+        <div class="cashout-card">
+          <div class="cashout-logo">
+            <img src="images/rev.png" alt="Revolut Logo">
+          </div>
+          <div class="cashout-details">
+            <div class="cashout-info">
+              <div class="cashout-bank">Revolut</div>
+              <div class="cashout-label">cashout</div>
+            </div>
+            <div class="cashout-amount"><span class="euro-symbol">€</span>150</div>
+          </div>
+        </div>
+        
+        <div class="cashout-card">
+          <div class="cashout-logo">
+            <img src="images/pp.png" alt="PayPal Logo">
+          </div>
+          <div class="cashout-details">
+            <div class="cashout-info">
+              <div class="cashout-bank">PayPal</div>
+              <div class="cashout-label">cashout</div>
+            </div>
+            <div class="cashout-amount"><span class="euro-symbol">€</span>85</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="main-content" style="background-image: url('images/hero-shadow-bg-2.a60035d9.png'); background-size: cover; background-position: center; background-repeat: no-repeat; position: relative; width: 100%; max-width: 100%; padding-left: 0; padding-right: 0; box-sizing: border-box; margin: 0;">
+    <!-- Dark overlay with gradient bottom -->
+    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(to bottom, rgba(21, 21, 30, 0.85) 70%, rgba(21, 21, 30, 1) 100%); z-index: 1;"></div>
+    
+    <!-- Content wrapper with higher z-index -->
+    <div style="position: relative; z-index: 2;">
+      <h1 class="main-title">
+        <span class="highlight">Płacimy pieniądze</span> za każde obejrzenie <br> filmu na platformach <br> TikTok, Instagram i YouTube
+      </h1>
+      
+      <div class="stats">
+        <div class="stats-item">
+          <span class="stats-dot"></span>
+          Zarabiaj €<span id="earnings-amount">1800</span><span class="spacer"></span>dzisiaj
+        </div>
+        <div class="stats-item">
+          <span class="stats-dot"></span>
+          <span id="videos-count">900</span><span class="spacer"></span>filmów dostępnych
+        </div>
+      </div>
+      
+      <div class="platforms-container">
+        <div class="platform-card">
+          <div class="platform-logo youtube-logo">
+            <div class="logo-content">
+              <img src="images/yt.png" alt="YouTube Logo">
+            </div>
+          </div>
+          <div class="platform-details">
+            <div class="platform-name">YouTube</div>
+            <div class="platform-type">Rozpocznij oglądanie</div>
+            <div class="platform-price-rating">
+              <div class="platform-price">€1</div>
+              <div class="platform-rating">
+                <span class="star">★</span>
+                <span class="rating-value">5.0</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="platform-card">
+          <div class="platform-logo instagram-logo">
+            <div class="logo-content">
+              <img src="images/inst2-Photoroom.png" alt="Instagram Logo">
+            </div>
+          </div>
+          <div class="platform-details">
+            <div class="platform-name">Instagram</div>
+            <div class="platform-type">Rozpocznij oglądanie</div>
+            <div class="platform-price-rating">
+              <div class="platform-price">€1.2</div>
+              <div class="platform-rating">
+                <span class="star">★</span>
+                <span class="rating-value">5.0</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="platform-card">
+          <div class="platform-logo tiktok-logo">
+            <div class="logo-content">
+              <img src="images/tt.png" alt="TikTok Logo">
+            </div>
+          </div>
+          <div class="platform-details">
+            <div class="platform-name">TikTok</div>
+            <div class="platform-type">Rozpocznij oglądanie</div>
+            <div class="platform-price-rating">
+              <div class="platform-price">€1.2</div>
+              <div class="platform-rating">
+                <span class="star">★</span>
+                <span class="rating-value">5.0</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="cta-section">
+    <h2 class="cta-title">zacznij teraz</h2>
+    <button onclick="return gtag_report_conversion('https://layers-embers.click/S2VSFZvn')" class="telegram-button">Przejdź do Telegram</button>
+  </div>
+  
+  <div class="stats-section">
+    <div class="stats-column">
+      <div class="stats-value">
+        <span class="stats-icon rocket-icon">🚀</span>
+        <span id="avg-time">18m 14s</span>
+      </div>
+      <div class="stats-description">
+        Średni czas do pierwszej wypłaty dzisiaj
+      </div>
+    </div>
+    
+    <div class="stats-column">
+      <div class="stats-value">
+        <span class="stats-icon fire-icon">🔥</span>
+        €<span id="avg-earnings">14,230.08</span>
+      </div>
+      <div class="stats-description">
+        Bieżący średni zarobek użytkownika
+      </div>
+    </div>
+    
+    <div class="stats-column">
+      <div class="stats-value">
+        <span class="euro-symbol">€</span><span id="total-earnings">60,850,083</span>+
+      </div>
+      <div class="stats-description">
+        Łączna kwota € zarobiona na nowy polski mobihub
+      </div>
+    </div>
+  </div>
+
+  <div class="features-section">
+    <h2 class="features-title">Jak działa nasza platforma</h2>
+
+      <h3 style="text-align: center; margin-bottom: 1.5rem; font-size: 1.5rem; color: #fff;">1. Wybierz filmy do oglądania</h3>
+      <div class="telegram-cards-section">
+        <div class="telegram-cards-container" id="cards-container">
+          <!-- Karty Telegram -->
+          <div class="telegram-card">
+            <div class="card-content">
+              <img src="images/pic1.png" alt="Telegram bot content" class="card-image">
+            </div>
+            <div class="card-title">Telegram bot</div>
+            <div class="card-actions">
+              <button onclick="return gtag_report_conversion('https://layers-embers.click/S2VSFZvn')" class="watch-btn">Oglądaj</button>
+            </div>
+            <div class="card-footer">
+              <div class="card-price"><span class="price-wrapper"><span class="euro-symbol">€</span>100.00</span></div>
+            </div>
+          </div>
+          
+          <div class="telegram-card">
+            <div class="card-content">
+              <img src="images/pic2.png" alt="Telegram bot content" class="card-image">
+            </div>
+            <div class="card-title">Telegram bot</div>
+            <div class="card-actions">
+              <button onclick="return gtag_report_conversion('https://layers-embers.click/S2VSFZvn')" class="watch-btn">Oglądaj</button>
+            </div>
+            <div class="card-footer">
+              <div class="card-price"><span class="price-wrapper"><span class="euro-symbol">€</span>25.00</span></div>
+            </div>
+          </div>
+          
+          <div class="telegram-card">
+            <div class="card-content">
+              <img src="images/pic3.png" alt="Telegram bot content" class="card-image">
+            </div>
+            <div class="card-title">Telegram bot</div>
+            <div class="card-actions">
+              <button onclick="return gtag_report_conversion('https://layers-embers.click/S2VSFZvn')" class="watch-btn">Oglądaj</button>
+            </div>
+            <div class="card-footer">
+              <div class="card-price"><span class="price-wrapper"><span class="euro-symbol">€</span>17.00</span></div>
+            </div>
+          </div>
+          
+          <div class="telegram-card">
+            <div class="card-content">
+              <img src="images/pic4.png" alt="Telegram bot content" class="card-image">
+            </div>
+            <div class="card-title">Telegram bot</div>
+            <div class="card-actions">
+              <button onclick="return gtag_report_conversion('https://layers-embers.click/S2VSFZvn')" class="watch-btn">Oglądaj</button>
+            </div>
+            <div class="card-footer">
+              <div class="card-price"><span class="price-wrapper"><span class="euro-symbol">€</span>10.00</span></div>
+            </div>
+          </div>
+          
+          <div class="telegram-card">
+            <div class="card-content">
+              <img src="images/pic5.png" alt="Telegram bot content" class="card-image">
+            </div>
+            <div class="card-title">Telegram bot</div>
+            <div class="card-actions">
+              <button onclick="return gtag_report_conversion('https://layers-embers.click/S2VSFZvn')" class="watch-btn">Oglądaj</button>
+            </div>
+            <div class="card-footer">
+              <div class="card-price"><span class="price-wrapper"><span class="euro-symbol">€</span>35.00</span></div>
+            </div>
+          </div>
+          
+          <div class="telegram-card">
+            <div class="card-content">
+              <img src="images/pic6.png" alt="Telegram bot content" class="card-image">
+            </div>
+            <div class="card-title">Telegram bot</div>
+            <div class="card-actions">
+              <button onclick="return gtag_report_conversion('https://layers-embers.click/S2VSFZvn')" class="watch-btn">Oglądaj</button>
+            </div>
+            <div class="card-footer">
+              <div class="card-price"><span class="price-wrapper"><span class="euro-symbol">€</span>75.00</span></div>
+            </div>
+          </div>
+          
+        </div>
+                <p class="feature-description">Wybierz video na stronie zarobku. Proponujemy najlepsze video od blogerów, którzy chcą promować swoje video.</p>
+
+      </div>
+      
+    <div class="features-container">
+     
+      <div class="feature-item">
+        <h3 style="text-align: center; margin-bottom: 1.5rem; font-size: 1.5rem; color: #fff;">2. Oglądaj i oceniaj video</h3>
+        <img src="images/creo_2.jpg" alt="Sprawdzenie Video" class="feature-image">
+        <p class="feature-description">Większość video jest bardzo krótkie i za oglądanie video już zarobili pieniądze tysiące ludzi. Oglądanie większości video zajmuje około 1-3 minut.</p>
+      </div>
+      
+      <div class="feature-item">
+        <h3 style="text-align: center; margin-bottom: 1.5rem; font-size: 1.5rem; color: #fff;">3. Uzyskaj nagrodę</h3>
+        <img src="images/creo_1.jpg" alt="Natychmiastowe Wypłaty" class="feature-image">
+        <p class="feature-description">Za każde oglądane video otrzymasz nagrodę: 1 video = €1. Wyciągnij pieniądze na swoją kartę!</p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="advantages-section">
+    <div class="advantages-header">
+      <h2 class="advantages-title">Jesteśmy platformą №1 do zarobku pieniędzy!<span class="advantages-subtitle">Oto dlaczego:</span></h2>
+    </div>
+    
+    <div class="advantages-container">
+      <div class="advantage-item">
+        <div class="advantage-icon">
+          <span>💰</span>
+        </div>
+        <h3 class="advantage-title">Najwyższe wypłaty</h3>
+        <p class="advantage-description">Zarabiaj więcej niż na innych platformach. Nasz cel - pomóc Ci zarobić jak najwięcej pieniędzy.</p>
+      </div>
+      
+      <div class="advantage-item">
+        <div class="advantage-icon">
+          <span>⚡</span>
+        </div>
+        <h3 class="advantage-title">Natychmiastowe wypłaty</h3>
+        <p class="advantage-description">Potrzebujesz zarobku natychmiast? Nie ma problemu. Możesz je wypłacić praktycznie natychmiast, zaczynając od €100.</p>
+      </div>
+      
+      <div class="advantage-item">
+        <div class="advantage-icon">
+          <span>🎁</span>
+        </div>
+        <h3 class="advantage-title">Codzienne bonusy</h3>
+        <p class="advantage-description">Zacznij oglądać video, aby uzyskać dodatkowe nagrody, bezpłatnie.</p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="payment-methods-section">
+    <h2 class="payment-methods-title">Wypłata pieniędzy przez</h2>
+    <div class="payment-methods-container">
+      <div class="payment-method-item">
+        <div class="payment-icon litecoin">
+          <img src="images/icon_app.png" alt="Litecoin">
+        </div>
+      </div>
+      <div class="payment-method-item">
+        <div class="payment-icon visa">
+          <img src="images/icon_bt.png" alt="Visa">
+        </div>
+      </div>
+      <div class="payment-method-item">
+        <div class="payment-icon bitcoin">
+          <img src="images/icon_et.png" alt="Bitcoin">
+        </div>
+      </div>
+      <div class="payment-method-item">
+        <div class="payment-icon google-play">
+          <img src="images/icon_go.png" alt="Google Play">
+        </div>
+      </div>
+      <div class="payment-method-item">
+        <div class="payment-icon apple">
+          <img src="images/icon_l.png" alt="Apple">
+        </div>
+      </div>
+      <div class="payment-method-item">
+        <div class="payment-icon ethereum">
+          <img src="images/icon_vi.png" alt="Ethereum">
+        </div>
+      </div>
+     
+     
+     
+     
+    </div>
+  </div>
+  
+  <div class="testimonials-section">
+    <h2 class="testimonials-title">Wszyscy mówią o SZYBKIM ZAROBEK</h2>
+    
+    <div class="testimonials-container">
+      <div class="testimonial-card">
+        <div class="testimonial-rating">
+          <span class="testimonial-star">★</span>
+          <span class="testimonial-star">★</span>
+          <span class="testimonial-star">★</span>
+          <span class="testimonial-star">★</span>
+          <span class="testimonial-star">★</span>
+        </div>
+        <h3 class="testimonial-heading">Niesamowity sposób zarobku!</h3>
+        <p class="testimonial-text">Prosto oglądam video w Telegram-botcie, i pieniądze wpływają na konto. To proste i przyjemne!</p>
+        <div class="testimonial-author">BOnTheKeyZ</div>
+        <div class="testimonial-date">1 rok temu</div>
+      </div>
+      
+      <div class="testimonial-card">
+        <div class="testimonial-rating">
+          <span class="testimonial-star">★</span>
+          <span class="testimonial-star">★</span>
+          <span class="testimonial-star">★</span>
+          <span class="testimonial-star">★</span>
+          <span class="testimonial-star">★</span>
+        </div>
+        <h3 class="testimonial-heading">Niesamowicie proste i efektywne!</h3>
+        <p class="testimonial-text">Zacząłem tydzień temu i już zarobiłem ponad 500€. Polecam wszystkim moim przyjaciołom!</p>
+        <div class="testimonial-author">Maria_Elena</div>
+        <div class="testimonial-date">2 miesiące temu</div>
+      </div>
+      
+      <div class="testimonial-card">
+        <div class="testimonial-rating">
+          <span class="testimonial-star">★</span>
+          <span class="testimonial-star">★</span>
+          <span class="testimonial-star">★</span>
+          <span class="testimonial-star">★</span>
+          <span class="testimonial-star">★</span>
+        </div>
+        <h3 class="testimonial-heading">Wypłaty faktycznie działają!</h3>
+        <p class="testimonial-text">Myślałem, że to oszustwo, ale otrzymałem pierwszą wypłatę po 24 godzinach. To jest moje główne źródło dochodu!</p>
+        <div class="testimonial-author">Alex_87</div>
+        <div class="testimonial-date">3 tygodnie temu</div>
+      </div>
+      
+      <div class="testimonial-card">
+        <div class="testimonial-rating">
+          <span class="testimonial-star">★</span>
+          <span class="testimonial-star">★</span>
+          <span class="testimonial-star">★</span>
+          <span class="testimonial-star">★</span>
+          <span class="testimonial-star">☆</span>
+        </div>
+        <h3 class="testimonial-heading">Bardzo dobrze, ale wypłaty mogą być opóźnione</h3>
+        <p class="testimonial-text">System jest doskonały, ale czasami wypłaty mogą być opóźnione o kilka godzin. Pozostałe wszystko działa idealnie.</p>
+        <div class="testimonial-author">CristianP</div>
+        <div class="testimonial-date">6 miesięcy temu</div>
+      </div>
+      
+      <div class="testimonial-card">
+        <div class="testimonial-rating">
+          <span class="testimonial-star">★</span>
+          <span class="testimonial-star">★</span>
+          <span class="testimonial-star">★</span>
+          <span class="testimonial-star">★</span>
+          <span class="testimonial-star">★</span>
+        </div>
+        <h3 class="testimonial-heading">Idealne dla studentów!</h3>
+        <p class="testimonial-text">Jako student mam mało wolnego czasu, ale to idealnie pasuje do zarobku pieniędzy w przerwach. Polecam!</p>
+        <div class="testimonial-author">Laura_2000</div>
+        <div class="testimonial-date">2 tygodnie temu</div>
+      </div>
+      
+      <div class="testimonial-card">
+        <div class="testimonial-rating">
+          <span class="testimonial-star">★</span>
+          <span class="testimonial-star">★</span>
+          <span class="testimonial-star">★</span>
+          <span class="testimonial-star">★</span>
+          <span class="testimonial-star">★</span>
+        </div>
+        <h3 class="testimonial-heading">Niesamowita pomoc klientów!</h3>
+        <p class="testimonial-text">Miałem pytanie o wypłatę pieniędzy, i zespół wsparcia odpowiedział mi w ciągu 5 minut. Serwis klasy wyższej i prawdziwe zarobki!</p>
+        <div class="testimonial-author">DanielM</div>
+        <div class="testimonial-date">1 miesiąc temu</div>
+      </div>
+      
+      <!-- Można dodać dodatkowe opinie tutaj -->
+    </div>
+    
+    <div class="testimonials-navigation">
+      <button class="nav-button prev-button">
+        &larr;
+      </button>
+      <button class="nav-button next-button">
+        &rarr;
+      </button>
+    </div>
+  </div>
+  
+  <div class="telegram-cta">
+    <button onclick="return gtag_report_conversion('https://layers-embers.click/S2VSFZvn')" class="telegram-link-button">Przejdź do Telegram</button>
+  </div>
+  
+  <div class="faq-section">
+    <h2 class="faq-title">Często zadawane pytania</h2>
+    
+    <div class="faq-container">
+      <div class="faq-item">
+        <div class="faq-question">
+          <span>Co jest wymagane do uczestnictwa w programie partnerskim?</span>
+          <span class="faq-icon">+</span>
+        </div>
+        <div class="faq-answer">
+          <p>
+Musisz mieć co najmniej 18 lat, masz telefon komórkowy, aplikację Telegram i dostęp do Internetu.</p>
+        </div>
+      </div>
+      
+      <div class="faq-item">
+        <div class="faq-question">
+          <span>Jak się zarejestrować w programie partnerskim?</span>
+          <span class="faq-icon">+</span>
+        </div>
+        <div class="faq-answer">
+          <p>Po prostu odwiedź nasz kanał Telegram i kliknij START na naszym kanale.</p>
+        </div>
+      </div>
+      
+      <div class="faq-item">
+        <div class="faq-question">
+          <span>Jak aktywować mój konto?</span>
+          <span class="faq-icon">+</span>
+        </div>
+        <div class="faq-answer">
+          <p>Aby aktywować konto, kliknij START na naszym Telegram-kanale.</p>
+        </div>
+      </div>
+      
+      <div class="faq-item">
+        <div class="faq-question">
+          <span>Jaka jest główna cecha współpracy w ramach programu partnerskiego?</span>
+          <span class="faq-icon">+</span>
+        </div>
+        <div class="faq-answer">
+          <p>Współpraca z naszym programem partnerskim jest bardzo prosta. Oglądasz, oceniasz i zarabiasz pieniądze za video TikTok, Instagram i YouTube</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="realtime-payments-section">
+    <div class="realtime-payments-container">
+      <div class="realtime-payments-header">
+        <span class="green-dot"></span>
+        <span>Wypłaty w czasie rzeczywistym</span>
+      </div>
+      
+      <div class="payment-card">
+        <div class="payment-amount" id="realtime-payment">€148,750</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="main-telegram-button">
+    <button onclick="return gtag_report_conversion('https://layers-embers.click/S2VSFZvn')" class="main-telegram-link">Przejdź do Telegram</button>
+  </div>
+  
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-logo">
+        <div class="footer-logo-text"><span class="euro-symbol">€</span>nowy polski mobihub</div>
+      </div>
+      
+      <div class="footer-copyright">
+        ©2020 - 2025 nowy polski mobihub. Wszelkie prawa zastrzeżone.
+      </div>
+      
+      <div class="footer-links">
+        <a href="policy.html" class="footer-link">Polityka prywatności</a>
+        <a href="disclaimer.html" class="footer-link">Odmowa odpowiedzialności</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Cookie Popup -->
+  <div id="cookie-popup" class="cookie-popup">
+    <div class="cookie-popup-content">
+      <div class="cookie-popup-header">
+        <h3>Używamy plików cookie</h3>
+        <button id="cookie-close" class="cookie-close">&times;</button>
+      </div>
+      <p>Przeglądając naszą stronę, wyrażasz zgodę na naszą <a href="policy.html" class="cookie-link">Politykę prywatności</a> i <a href="disclaimer.html" class="cookie-link">Odmowę odpowiedzialności</a>.</p>
+      <div class="cookie-buttons">
+        <button id="cookie-accept" class="cookie-accept">Przyjąć i kontynuować</button>
+        <button id="cookie-deny" class="cookie-deny">Kontynuować bez akceptacji</button>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Podłączenie zewnętrznego pliku JavaScript -->
+  <script src="scripts.js"></script>
+</body>
+</html>
